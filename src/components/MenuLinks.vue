@@ -9,7 +9,7 @@ export default {
 
 <template>
     <div class="container-links">
-        <h4>{{ details.link }}</h4>
+        <div>{{ details.link }}</div>
     </div>
 </template>
 
