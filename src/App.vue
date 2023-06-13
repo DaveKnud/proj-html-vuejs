@@ -1,4 +1,5 @@
 <script>
+import { store } from './store.js';
 import axios from 'axios';
 import PageHeader from './components/PageHeader.vue';
 import PageMain from './components/PageMain.vue';
@@ -9,7 +10,12 @@ export default {
     PageHeader,
     PageMain,
     PageFooter
-  }
+  },
+  data() {
+    return {
+      store
+    }
+  },
 }
 </script>
 

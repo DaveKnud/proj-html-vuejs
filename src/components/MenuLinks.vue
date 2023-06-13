@@ -10,9 +10,7 @@ export default {
 <template>
     <div class="container-links">
         <h4>{{ details.link }}</h4>
-
     </div>
-    <div> <img :src="details.button" alt=""></div>
 </template>
 
 <style scoped lang="scss">
