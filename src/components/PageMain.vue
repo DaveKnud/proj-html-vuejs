@@ -44,7 +44,7 @@ export default {
 
         <!-- Start-learning-and-courses-section SECTION -->
         <section class="Start-learning-and-courses-section">
-            <div class="row">
+            <div class="row-courses">
                 <div class="start-learning-to-drive">
                     <div>
                         <h2>Start Learning to Drive Today</h2>
@@ -114,6 +114,100 @@ export default {
                     </div>
                 </div>
 
+                <!-- YOUR INSTRUCTORS -->
+                <div class="your-instructor-container">
+                    <div class="row">
+                        <h2>Your Instructors</h2>
+                        <div class="text-instructors">
+                            <div class="text-text-instructors grey"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Veritatis architecto
+                                modi dolore, ex magnam dolorem corrupti nemo! Veniam dicta unde doloremque, et
+                                exercitationem,
+                                optio modi amet iure libero, praesentium repudiandae!
+                            </div>
+                            <div class="button">More About Us</div>
+                        </div>
+                        <!-- img1 -->
+                        <div class="cards-instructors">
+                            <div class="card rate-col text-align-center">
+                                <div class="card-body">
+                                    <div class="img-instructor-container">
+                                        <img src="../../img/instructor-mikehart-600x381.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h4>Mike Hart</h4>
+                                <div class="icons-instructor grey">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <small class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime
+                                    officia vitae
+                                    magni esse, voluptas unde at repudiandae quia ad illum</small>
+                            </div>
+
+                            <!-- img2 -->
+                            <div class="card rate-col text-align-center">
+                                <div class="card-body">
+                                    <div class="img-instructor-container">
+                                        <img src="../../img/instructor-johnsmith.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h4>john Smith</h4>
+                                <div class="icons-instructor grey">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <small class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime
+                                    officia vitae
+                                    magni esse, voluptas unde at repudiandae quia ad illum</small>
+                            </div>
+                            <!-- img3 -->
+                            <div class="card rate-col text-align-center">
+                                <div class="card-body">
+                                    <div class="img-instructor-container">
+                                        <img src="../../img/instructor-angelahart.jpg" alt="">
+                                    </div>
+                                </div>
+                                <h4>Angela Hart</h4>
+                                <div class="icons-instructor grey">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <small class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime
+                                    officia vitae
+                                    magni esse, voluptas unde at repudiandae quia ad illum</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TESTIMONIAL SECTION -->
+                <div class="testimonials-container">
+                    <div class="row-testimonials">
+                        <div class="text-align-center">
+                            <h2>Testimonials</h2>
+                            <div class="grey">
+                                <div>
+                                    Here's what our happy drivers had to say about our services:
+                                </div>
+                                <div class="img-container"><img class="img-testimonial"
+                                        src="https://github.com/DaveKnud/proj-html-vuejs/blob/main/testimonial-sophia.png?raw=true"
+                                        alt="">
+                                </div>
+                                <i>Avada Driving School really helped build my confidence bvehind the wheel and with driving
+                                    in
+                                    general, and they got me a first time pass!
+                                    <br> Highly Recommended
+                                </i>
+                                <br>
+                                <br>
+                                <strong>Sofia Jones</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -238,7 +332,7 @@ h1 {
 
 .rate-col {
     width: calc(100% / 3);
-    height: 300px;
+    height: 100%;
     box-shadow: 1px 1px 5px 1px rgb(176, 176, 176);
     border: none;
     padding-top: 30px;
@@ -251,6 +345,8 @@ h1 {
     color: #7ABC64;
     transform: rotate(-0.05turn);
     position: relative;
+
+
 }
 
 .rate-container i.empty {
@@ -263,8 +359,70 @@ h1 {
     font-size: 40px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 45%;
     left: 50%;
     color: gray;
+}
+
+//YOUR INSTRUCTORS
+.your-instructor-container {
+    display: flex;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 40px;
+}
+
+.text-instructors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-text-instructors {
+    width: 70%;
+    margin-top: 15px;
+}
+
+.img-instructor-container {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+.img-instructor-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cards-instructors {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: -50px;
+}
+
+.icons-instructor i {
+    margin-right: 15px;
+}
+
+//TESTIMONIAL SECTION
+.testimonials-container {
+    width: 100%;
+    min-height: 600px;
+    background-image: url('../../public/img/testimonial-background.jpg');
+}
+
+.row-testimonials {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.img-testimonial {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 </style>
